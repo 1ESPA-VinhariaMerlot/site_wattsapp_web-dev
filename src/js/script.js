@@ -4,10 +4,11 @@ function trocar(cor) {
 
 let imagens=[
     "src/assets/image1.jpg",
-    "src/assets/image2.jpg",
-    "src/assets/image3.webp",
+    "src/assets/image2.webp",
+    "src/assets/image3.jpg",
     "src/assets/image4.jpg",
-    "src/assets/image5.jpg"
+    "src/assets/image5.jpg",
+    "src/assets/image12.jpg"
 ]
 
 //DECLARANDO AS VARIAVEIS
