@@ -1,0 +1,140 @@
+body {
+
+    background-color: #f3f4f6; 
+    display: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    padding: 1rem;
+    margin: 1px;
+    box-sizing: border-box;
+}
+h1 {
+    color: #00ff88
+}
+h2 {
+    color: #00ff88;
+    margin-bottom: 0.5rem;
+}
+h3 {
+    color: #73f9bb
+}
+p {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    color: #ccc;
+}
+
+.form-contato {
+    width: 100%;
+    max-width: 600px; 
+    padding: 2rem; 
+    background-color: #ffffff; 
+    border-radius: 0.75rem; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra */
+    box-align: center;
+}
+
+
+.form-contato h1 {
+    font-size: 2rem; 
+    font-weight: 700; 
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.form-contato p {
+    text-align: center;
+    color: #4b5563; 
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem; 
+    font-weight: 500; 
+    color: #374151; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem; 
+    color: #374151;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem; 
+    box-sizing: border-box; 
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #07ff07;
+    box-shadow: 0 0 0 3px #07ff07; 
+}
+
+.privacy-group {
+    display: flex;
+    align-items: flex;
+}
+
+.privacy-group input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.privacy-group .label-inline {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.privacy-group a {
+    color: #00ff88;
+    text-decoration: none;
+}
+
+.botton-enviar {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-weight: 700; 
+    color: #ffffff; 
+    background-color: #07ff07; 
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.125rem; 
+    transition: background-color 0.3s ease;
+}
+
+.botton-enviar:hover {
+    background-color: #07ff07; 
+}
+
+.botton-enviar:disabled {
+    background-color: #9ca3af; 
+    cursor: not-allowed;
+}
+
+#form-response {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
