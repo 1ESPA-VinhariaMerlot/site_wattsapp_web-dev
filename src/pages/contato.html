@@ -6,7 +6,6 @@
     <title>Contato</title>
     <link rel="stylesheet" href="../css/contato.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../js/contato.js">
 </head>
 <body>
     <header>
@@ -24,10 +23,9 @@
     <main>
         <section class="Contato">
             <h1>Fale Conosco</h1>
-            <h2>Estamos aqui para ouvir você. Conecte-se com a equipe Wattsapp!</h2>
+            <h2>Estamos aqui para ouvir você. Conecte-se com a equipe WattsApp!</h2>
         </section>
-    </main>
-    <div class="form-contato">
+            <div class="form-contato">
 
         <form id="contato-form">
 
@@ -80,56 +78,8 @@
 
         </form>
     </div>
+    </main>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            
-            const form = document.getElementById("contact-form");
-            const responseDiv = document.getElementById("form-response");
-            const btnEnviar = document.getElementById("btn-enviar");
-
-            form.addEventListener("submit", function(event) {
-
-                event.preventDefault();
-
-                btnEnviar.disabled = true;
-                btnEnviar.textContent = " Enviando...";
-                responseDiv.textContent = ""; 
-
-                const formData = new FormData(form);
-                const data = {
-                    nome: formData.get("nome"),
-                    email: formData.get("email"),
-                    telefone: formData.get("telefone"),
-                    assunto: formData.get("assunto"),
-                    mensagem: formData.get("mensagem")
-                };
-
-                .then(response => {
-                    return response.json().then(result => ({ok: response.ok, result}));
-                })
-                .then(({ ok, result }) => {
-                    if (!ok) {
-                        throw new Error(result.message || "Erro no servidor. Tente novamente.");
-                    }
-
-                    responseDiv.style.color = "green";
-                    responseDiv.textContent = result.message; 
-                    form.reset(); 
-                })
-                .catch(error => {
-
-                    responseDiv.style.color = "red";
-                    responseDiv.textContent = "Erro: " + error.message;
-                    console.error("Erro no fetch:", error);
-                })
-                .finally(() => {
-                    btnEnviar.disabled = false;
-                    btnEnviar.textContent = "Enviar Mensagem";
-                });
-            });
-        });
-    </script>
     <footer>
         <p>Wattsapp — Energia que se transforma em consciência.</p>
         <p>
