@@ -1,0 +1,21 @@
+.resultado  {
+    background-color: #f0f8ff; /* cor de fundo suave */
+    border: 5px solid #2ff536; /* borda verde */
+    border-radius: 8px; /* cantos arredondados */
+    padding: 15px; /* espaço interno */
+    font-size: 18px; /* tamanho da fonte */
+    color: #333; /* cor do texto */
+    text-align: center; /* centraliza o texto */
+    width: fit-content; /* ajusta ao tamanho do texto */
+    margin: 20px auto; /* centraliza na tela */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra para dar destaque */
+}
+
+.video{        
+  padding:30px;
+  width: 1000px;
+  height: 515px;
+  border: 5px solid #2ff536;
+  display: block;
+  margin: 0 auto;
+  }
