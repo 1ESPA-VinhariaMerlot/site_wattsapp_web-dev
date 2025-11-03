@@ -1,14 +1,18 @@
 body {
-
+    
     background-color: #f3f4f6; 
     display: center;
     align-items: center;
     justify-content: center;
     min-height: 100vh; 
-    padding: 1rem;
-    margin: 1px;
+   
     box-sizing: border-box;
 }
+main{
+    padding:3% ;
+    }
+
+
 h1 {
     color: #00ff88
 }
@@ -26,6 +30,7 @@ p {
 }
 
 .form-contato {
+   
     width: 100%;
     max-width: 600px; 
     padding: 2rem; 
@@ -37,6 +42,7 @@ p {
 
 
 .form-contato h1 {
+    
     font-size: 2rem; 
     font-weight: 700; 
     text-align: center;
@@ -45,6 +51,7 @@ p {
 }
 
 .form-contato p {
+    
     text-align: center;
     color: #4b5563; 
     margin-bottom: 1.5rem;
